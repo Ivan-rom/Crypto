@@ -1,0 +1,120 @@
+.advantage__list-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 54px;
+}
+
+.advantage__button {
+    color: #ffffff;
+    border: none;
+    background-color: #68B7FF;
+    border-radius: 20px;
+    width: 180px;
+    height: 47px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    border: 1px solid transparent;
+    transition-property: border-color, background-color;
+    transition-duration: .15s;
+    transition-timing-function: ease-in-out;
+}
+
+.advantage__button:hover {
+    border-color: #1C88EB;
+}
+
+.advantage__button_active,
+.advantage__button:active {
+    background-color: #1C88EB;
+    border-color: #1C88EB;
+}
+
+.advantage__item-content {
+    max-width: 640px;
+    margin: 0 auto;
+    display: none;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.advantage__item-content_active {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.advantage__item-content::before {
+    content: "";
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advantage__item-content_coveinence::before {
+    background-image: url(../../img/convenience.svg);
+}
+
+
+.advantage__item-content_speed::before {
+    background-image: url(../../img/speed.svg);
+}
+
+.advantage__item-content_quality::before {
+    background-image: url(../../img/quality.svg);
+}
+
+.advantage__item-content_security::before {
+    background-image: url(../../img/security.svg);
+}
+
+
+@media (max-width: 768px) {
+    .advantage__item-content {
+        font-size: 16px;
+        line-height: 21px;
+        max-width: 560px;
+    }
+
+    .advantage__button {
+        width: 160px;
+        height: 39px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width: 720px) {
+    .advantage__list-btn {
+        flex-wrap: wrap;
+        max-width: 340px;
+        margin: 0 auto 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .advantage__list-btn {
+        margin-bottom: 30px;
+    }
+
+    .advantage__item-content {
+        max-width: 290px;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .advantage__item-content::before {
+        width: 60px;
+        height: 60px;
+    }
+}
