@@ -38,8 +38,7 @@ const show = (elem, answer) => {
 
 }
 
-
-export const accordion = () => {
+const accordion = () => {
     const list = document.querySelector('.faq__list');
     const faqItems = document.querySelectorAll('.faq__item');
 
@@ -60,3 +59,5 @@ export const accordion = () => {
         }
     })
 }
+
+accordion();
